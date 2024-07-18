@@ -1,0 +1,32 @@
+.body--dark .page-dark-custom {
+  background: linear-gradient(50deg, rgb(49,79,178) 1%, rgb(23,25,58) 100%) !important;
+}
+.body--dark .sidebar_custom,
+.body--dark .q-toolbar,
+.body--dark .card-custom-dark
+{
+  background: #0F1535 !important;
+}
+.body--dark .q-item__label{
+  color: white;
+}
+.body--dark .q-card--dark{
+  background: #090E2A !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
+}
+.body--dark .active_tab{
+  background: #1f2d70 !important;
+}
+
+.body--dark .text-dark-mode{
+  color: white !important;
+}
+
+.body--dark .q-table--dark,
+.body--dark .q-tab-panels--dark,
+.body--dark .q-stepper--dark
+{
+  background-color: #0F1535 !important;
+}
+

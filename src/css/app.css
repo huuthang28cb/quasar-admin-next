@@ -1,0 +1,27 @@
+/* app global css */
+
+.active_tab {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.glowing-border {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glowing-border:hover {
+  box-shadow: 0 0 12px rgba(0, 123, 255, 1);
+}
+
+.body--light .q-toolbar{
+  background: 'white' !important;
+}
+
+.item_card_custom{
+  border-radius: 8px;
+}
+
