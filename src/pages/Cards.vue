@@ -3,9 +3,7 @@
     <div class="row q-col-gutter-lg">
       <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
         <q-card class="" bordered>
-          <q-img
-            src="https://cdn.quasar.dev/img/parallax1.jpg"
-          />
+          <q-img src="https://cdn.quasar.dev/img/parallax1.jpg" />
           <q-separator></q-separator>
           <q-card-section class="text-h6 text-grey-8 q-pa-md">
             Bar XYZ
@@ -22,7 +20,7 @@
             </div>
           </q-card-section>
           <q-card-actions>
-            <q-btn label="Go Somewhere" class="text-capitalize" color="indigo-9"/>
+            <q-btn label="Go Somewhere" class="text-capitalize" color="indigo-9" />
           </q-card-actions>
         </q-card>
 
@@ -35,31 +33,20 @@
         <basic-card></basic-card>
 
         <card-item class="q-mt-lg" :name="profile_card_data.name" :des="profile_card_data.des"
-                   :avatar="profile_card_data.avatar"></card-item>
+          :avatar="profile_card_data.avatar"></card-item>
 
         <card-profile class="q-mt-lg" :name="profile_card_data.name" :des="profile_card_data.des"
-                      :avatar="profile_card_data.avatar"></card-profile>
+          :avatar="profile_card_data.avatar"></card-profile>
 
         <card-profile-dark class="q-mt-lg" :name="profile_data.name" :des="profile_data.des"
-                           :text="profile_data.text"></card-profile-dark>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-
-        <card-company class="q-mt-lg" :background_image="background_img2"></card-company>
-
-        <basic-card class="q-mt-lg"></basic-card>
-
-        <card-company class="q-mt-lg" :background_image="background_img1"></card-company>
-
-        <card-profile-dark class="q-mt-lg" :name="profile_data.name" :des="profile_data.des"
-                           :text="profile_data.text"></card-profile-dark>
+          :text="profile_data.text"></card-profile-dark>
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
-import {defineComponent, defineAsyncComponent} from 'vue'
+import { defineComponent, defineAsyncComponent } from 'vue'
 
 export default defineComponent({
   name: "Cards",
@@ -83,7 +70,7 @@ export default defineComponent({
       profile_data: {
         name: 'Pratik Patel',
         des: '--- Solution Developer, Pune',
-        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       },
       background_img1: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)',
       background_img2: 'linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important'
@@ -92,6 +79,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

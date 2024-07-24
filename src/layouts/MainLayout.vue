@@ -196,14 +196,34 @@
               <q-item-label>Card Header</q-item-label>
             </q-item-section>
           </q-item>
-          <q-item to="/Cards" active-class="q-item-no-link-highlighting active_tab text-blue bg-blue-1">
-            <q-item-section avatar>
-              <q-icon name="card_giftcard" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>Cards</q-item-label>
-            </q-item-section>
-          </q-item>
+          <q-expansion-item icon="card_giftcard" label="Cards">
+            <q-list class="q-pl-lg">
+              <q-item to="/Cards" active-class="q-item-no-link-highlighting active_tab text-blue bg-blue-1">
+                <q-item-section avatar>
+                  <q-icon name="card_giftcard" />
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Cards 1</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item to="/cards_2" active-class="q-item-no-link-highlighting active_tab text-blue bg-blue-1">
+                <q-item-section avatar>
+                  <q-icon name="card_giftcard" />
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Cards_2</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item to="/cards_3" active-class="q-item-no-link-highlighting active_tab text-blue bg-blue-1">
+                <q-item-section avatar>
+                  <q-icon name="card_giftcard" />
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Cards_3</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-expansion-item>
           <q-item to="/Tables" active-class="q-item-no-link-highlighting active_tab text-blue bg-blue-1">
             <q-item-section avatar>
               <q-icon name="table_chart" />
@@ -299,7 +319,10 @@
     </q-drawer>
 
     <q-page-container class="bg-grey-2 page-dark-custom">
-      <router-view />
+      <transition appear
+          enter-active-class="animated zoomInRight slower">
+        <router-view />
+    </transition>
     </q-page-container>
   </q-layout>
 </template>
